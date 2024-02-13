@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3500
 console.log(process.env.NODE_ENV)
 
 connectDB()
+
 //Add logger middleware created
 app.use(logger)
 
@@ -32,6 +33,8 @@ app.use(cors(corsOptions))
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/root'))
+
+app.use('/users', require('./routes/userRoutes'))
 
 //For 404 page
 app.all('*', (req, res) => {

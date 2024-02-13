@@ -21,6 +21,8 @@
 
 [ * ] Added user schema for signup data
 
-[ ] Complete API Controllers and Routers
+[ * ] Added controllers for user model data
+
+[ * ] Tested post and get on postman
 
 [ ] Set up separate frontend repo - React
