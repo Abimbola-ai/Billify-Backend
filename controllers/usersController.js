@@ -13,7 +13,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
   res.json(users)
 })
 
-//Create a new  users - POST
+//Create a new  user - POST
 const createNewUser = asyncHandler(async (req, res) => {
   const { firstName, lastName, email, password, roles } = req.body
   //Confirm data
@@ -74,7 +74,7 @@ const updateUser = asyncHandler(async (req, res) => {
   res.json({ message: `Updated user ${email} is updated` })
 })
 
-//DELTE a user
+//DELETE a user
 const deleteUser = asyncHandler(async (req, res) => {
   const { id } = req.body
   if (!id) {

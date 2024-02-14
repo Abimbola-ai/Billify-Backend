@@ -2,8 +2,11 @@
 
 **Setup steps - Backend Rest API**
 
-- Items with \* are done
+
+- Run npm install to install dependencies.
+- Run npm init to get node_modules.
 - npm run dev - command to start app
+- Items with \* are done
 
 [ * ] Set up nodejs/express - server.js
 
